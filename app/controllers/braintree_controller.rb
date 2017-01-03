@@ -13,7 +13,6 @@ class BraintreeController < ApplicationController
         :submit_for_settlement => true
         }
       )
-      byebug
     if result.success?
       redirect_to :root, :flash => {:success => "Transaction successful!"}
     else
